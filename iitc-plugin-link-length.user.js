@@ -65,7 +65,11 @@ window.plugin.commLinkLength.setup  = function() {
             var lng2 = plext.markup[4][1].lngE6/1e6;
             var dist = (new L.latLng(lat1,lng1).distanceTo(new L.latLng(lat2,lng2)));
             var $tr = $(chat._public.data[guid][2]);
-            $tr.find('td:last').append(' ('+window.plugin.commLinkLength.formatDistance(dist)+')');
+            var $msg = $tr.find('td:last');
+            var msgToAppend = ' ('+window.plugin.commLinkLength.formatDistance(dist)+')';
+            if ($msg.html().indexOf(msgToAppend) === -1 ) {
+              $msg.append(msgToAppend);
+            }
             chat._public.data[guid][2] = $tr.prop('outerHTML');
           }
       });
