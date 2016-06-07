@@ -1,8 +1,8 @@
 // ==UserScript==
 // @id             iitc-plugin-link-length@BilBao
 // @name           IITC plugin: Link Length
-// @version        0.1.1.20160607.000001
-// @namespace      https://github.com/jonatkins/ingress-intel-total-conversion
+// @version        0.1.1.20160607.000002
+// @namespace      https://github.com/WacesRedky/iitc-link-length
 // @updateURL		   https://github.com/WacesRedky/iitc-link-length/raw/master/iitc-plugin-link-length.user.js
 // @downloadURL		 https://github.com/WacesRedky/iitc-link-length/raw/master/iitc-plugin-link-length.user.js
 // @include        https://www.ingress.com/intel*
